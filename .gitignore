@@ -4,5 +4,5 @@ __pycache__/
 scrape.log
 .DS_Store
 chromedriver
-GGALoptions.txt
-argBonds.txt
+#GGALoptions.txt
+#argBonds.txt
