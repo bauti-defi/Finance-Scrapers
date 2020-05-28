@@ -1,4 +1,4 @@
-daily_H_*.txt
+*_Daily.txt
 config.json
 __pycache__/
 scrape.log
