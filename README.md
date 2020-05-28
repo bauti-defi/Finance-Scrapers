@@ -14,4 +14,7 @@ It's contents are a JSON Object like the following:
 ```
 
 ##ALPHA SCRAPER
-packages to pip install: NONE
+packages to pip install: requests
+
+##BALANZ SCRAPER
+packages to pip install: requests, websockets

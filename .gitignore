@@ -1,3 +1,8 @@
 daily_H_*.txt
 config.json
 __pycache__/
+scrape.log
+.DS_Store
+chromedriver
+GGALoptions.txt
+argBonds.txt

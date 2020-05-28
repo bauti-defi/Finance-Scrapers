@@ -1,0 +1,9 @@
+#!/bin/bash
+#!/usr/bin/python3
+
+process_count = ps aux | grep balanz.py | wc -l
+if [process_count < 2]
+then
+echo "Starting Balanz Scraper"
+python3 dirname/balanz.py
+fi
