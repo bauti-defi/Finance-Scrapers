@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd "$0"/data
+
+for entry in ./*
+do
+  echo "$entry"
+ # gupload -o "$entry" financialData 
+done
