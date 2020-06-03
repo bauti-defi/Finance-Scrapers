@@ -31,7 +31,7 @@ def getOptionsData(soup):
         name=name[name.find('\n')+1:name.rfind('\n')]
         cells=row.find_all('td')
         price=float(cells[5].text.replace(',','.'))
-        volume=int(cells[-2].text.replace('.',''))
+        volume=int(cells[-3].text.replace('.',''))
         dataRows.append([name,price,volume])
     return dataRows
 
