@@ -11,7 +11,7 @@ def scrape(url, file, parser, attempts):
         log(name, 'Failure, too many attempts')
 
     response = balanz.session.get(url)
-    if(response.status_code == 401):
+    if(response.status_code == 401 or response.status_code == 403):
         log(name, 'Auth Error!')
         balanz.refreshSession()
         scrape(url, file, parser, attempts+1)
