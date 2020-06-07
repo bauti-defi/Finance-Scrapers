@@ -5,5 +5,9 @@ scrape.log
 .DS_Store
 chromedriver
 GGALoptions.txt
-argBonds.txt
+ArgStocks.txt
+ArgCEDEARS.txt
+ArgBonds.txt
+ArgOptions.txt
+ArgFutures.txt
 backup.log

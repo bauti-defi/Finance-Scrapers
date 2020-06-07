@@ -11,7 +11,18 @@ optionExpirationDates={
     'AG':'2020-8-21'
 }
 
+def read_config():
+    with open(f"{directory}/config.json") as config:
+        return json.load(config)
+
+def write_config(newConfig):
+    with open(f"{directory}/config.json", 'w+') as config:
+        json.dump(newConfig, config)
+
 def get_config(key):
-    with open(f"{directory}/config.json") as private_config:
-        config = json.load(private_config)
-        return config[key]
+    return read_config()[key]
+
+def update_config(key, data):
+    config = read_config()
+    config[key] = data
+    write_config(config)
