@@ -18,7 +18,7 @@ def scrape(url, file, parser, attempts):
     elif(response.status_code == 200):
         data = json.loads(response.content)['cotizaciones']
         data = [*map(parser, data)]
-        dump = '\n'.join(data)
+        dump = '\n'.join(data) + '\n'
         save(file, dump, 'a+') #change to dump
 
 def parseBit(key, data):
